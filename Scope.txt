@@ -1,0 +1,3 @@
+This programme simply generates a random amount of points per special stat according to the game that the user chooses. The user choise is important since the game have different maximum/assignable S.P.E.C.I.A.L points.
+
+The programme asks the user what game they want, out of a chouse of Fallout 3, Fallout New Vegas, or Fallout 4. Then the programme generates the points for each S.P.E.C.I.A.L stat, which the user can then use in the game.
