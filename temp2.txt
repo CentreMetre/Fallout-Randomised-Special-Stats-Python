@@ -1,0 +1,27 @@
+# import random
+
+# def rand_part(total, size):
+#     print('total',total)
+#     print('size', size)
+#     parts = sorted([random.randrange(0, 10) 
+#                     for _ in range(size - 1)] + [0, total])
+#     print('parts', parts)
+#     return [r -l for l, r in zip(parts, parts[1:])]
+
+# list = rand_part(28, 7)
+
+# print(list)
+
+SpecialDict = {
+    'Strength' : 1,
+    'Perception' : 1,
+    'Endurance' : 1,
+    'Charisma' : 1,
+    'Intellegence' : 1,
+    'Agility' : 1,
+    'Luck' : 1
+    } #Default starting points
+
+SpecialNameList = ['Strength','Perception','Endurance' ,'Charisma','Intellegence','Agility','Luck']
+
+print(SpecialDict[SpecialNameList])

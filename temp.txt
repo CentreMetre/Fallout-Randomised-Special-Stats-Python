@@ -1,0 +1,43 @@
+
+import random
+
+SpecialDict = {
+    'Strength' : 1,
+    'Perception' : 1,
+    'Endurance' : 1,
+    'Charisma' : 1,
+    'Intellegence' : 1,
+    'Agility' : 1,
+    'Luck' : 1
+    }
+
+PointList = [1, 1, 1, 1, 1, 1, 1]
+PointListFloat = [1.0,1.0,1.0,1.0,1.0,1.0,1.0]
+
+for i in range(len(SpecialDict)):
+    print('i = ' + str(i))
+    r = random.randrange(1,10)
+    PointList[i] = r
+    print('points list int', PointList)
+    
+#Just generate N random numbers, compute their sum, divide each one by the sum and multiply by M.
+
+TotalPoints = sum(PointList)
+i=0
+for num in PointList:
+    PointListFloat[i] = num / TotalPoints
+    i =+ 1
+    
+for num in PointListFloat:
+    PointList[i] = PointListFloat[i] * 28
+    
+
+    
+print('points list float', PointListFloat)
+print('points list int', PointList)
+    
+    
+    
+
+        
+print('done')
