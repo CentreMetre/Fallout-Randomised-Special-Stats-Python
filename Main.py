@@ -1,7 +1,7 @@
 '''
 Author: CentreMetre | Martin McLaren | https://github.com/CentreMetre
-Date started: 16/01/2022
-Note: This is just kinda project i decided to make since i was bored, and wanted to test my renewed pyrthon skills, i am gonna make this in C# winforma also
+Date started: 26/01/2022
+Note: This is just kinda project I decided to make since I was bored, and wanted to test my renewed python skills, I am gonna make this in C# winforms also
 '''
 
 #------Imports------
@@ -90,8 +90,6 @@ def WhatGame():
             print(UnknownError)
 
 def GeneratePoints(Game): #, IsSeed, Seed): #when there was gonna be a seed for the RNG
-    #MaxPoints = MaxPointsGamesDict[Game] never used
-    #PointsAssigned = 0 never used
     for i in range(len(SpecialDict)):
         print('i = ' + str(i)) #DEBUG
         r = random.randrange(1,10)
@@ -109,7 +107,7 @@ def GeneratePoints(Game): #, IsSeed, Seed): #when there was gonna be a seed for 
     
 def ChangePoints(PointList, Game): #changes the points if there are to many
     print('On ChangePoints()') #DEBUG
-    if sum(PointList) > MaxPointsGamesDict[Game]: #chckes to see if thesum of the points is bigger than the max points for the game chosen
+    if sum(PointList) > MaxPointsGamesDict[Game]: #chceks to see if the sum of the points is bigger than the max points for the game chosen
         print('On if sum > game')
         for i in range(len(PointList)): #might have to redo all of this 
             if sum(PointList) == MaxPointsGamesDict[Game]:
@@ -168,19 +166,6 @@ def GetSeed(Game):
     else:
         print(InvalidInput)
 '''#i dont think a seed would work since it would create decimal numbers, so this is not going to be used.
-
-
-    
-    # for i in range(0, len(SpecialDict)):
-    #     PointsToApply = random.randint()
-    #     PointsLeft = PointsLeft - PointsToApply
-    #     if i == 4:
-            
-        
-        
-    
-#Just generate N random numbers, compute their sum, divide each one by the sum and multiply by M.
-#list[] = 
     
 
 WhatGame()
